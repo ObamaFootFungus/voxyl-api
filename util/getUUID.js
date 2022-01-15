@@ -2,9 +2,9 @@ const centra = require('centra')
 const path = require('path')
 const formatUUID = require(path.join(__dirname, '..', 'util', 'formatUUID.js'))
 
-module.exports = async (targetType, identifier) => {
-	const targetType = (identifier ? targetType : 'uuid')
-	const identifier = (identifier ? identifier : targetType)
+module.exports = async (p1, p2) => {
+	const targetType = (p2 ? p1 : 'uuid')
+	const identifier = (p2 ? p2 : p1)
 
 	let targetUUID = (targetType === 'uuid' ? identifier : null)
 
