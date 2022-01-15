@@ -145,7 +145,7 @@ class Client {
     /**
 	* Get the current announcements
 	*/
-    async getTopGuilds() {
+    async getAnnouncements() {
 
         const res = await centra(baseURL).path(`/announcement/all`).query({
             'api': this.key
