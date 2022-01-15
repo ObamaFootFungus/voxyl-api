@@ -1,0 +1,30 @@
+{
+  "name": "voxyl-api",
+  "version": "1.0.0",
+  "description": "A Voxyl API Client for Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ObamaFootFungus/voxyl-api.git"
+  },
+  "author": "ObamaFootFungus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ObamaFootFungus/voxyl-api/issues"
+  },
+  "homepage": "https://github.com/ObamaFootFungus/voxyl-api#readme",
+  "dependencies": {
+    "centra": "^2.0.2"
+  },
+  "keywords": [
+    "voxyl",
+    "voxyl-api",
+    "api-client",
+    "client",
+    "api",
+    "minecraft"
+  ]
+}
