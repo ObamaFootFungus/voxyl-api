@@ -105,10 +105,11 @@ class Client {
 
     /**
 	* Get the members of a guild
-	* @param {string} indentifier - The tag or id of the guild
+    * @param {string} [targetType=tag] - Target type. 'tag' or 'id'
+	* @param {string} identifier - Identifier for the target. (Either a tag or id, based on targetType.)
 	*/
     async getGuildMembers(indentifier) {
-
+        identifier = targetType !== 'id' ? indentifier : '-' + indentifier
         const res = await centra(baseURL).path(`/guild/members/${indentifier}`).query({
             'api': this.key
         }).send()
