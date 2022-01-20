@@ -1,6 +1,6 @@
 {
   "name": "voxyl-api",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A Voxyl API Client for Node",
   "main": "main/index.js",
   "scripts": {
