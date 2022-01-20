@@ -1,4 +1,4 @@
-﻿> A Voxyl API Client for Node
+## A Voxyl API Client for Node
 
 [GitHub](https://github.com/ObamaFootFungus/voxyl-api) | [NPM](https://www.npmjs.com/package/voxyl-api)
 
