@@ -108,7 +108,7 @@ class Client {
     * @param {string} [targetType=tag] - Target type. 'tag' or 'id'
 	* @param {string} identifier - Identifier for the target. (Either a tag or id, based on targetType.)
 	*/
-    async getGuildMembers(identifier) {
+    async getGuildMembers(targetType, identifier) {
         identifier = targetType !== 'id' ? identifier : '-' + identifier
         const res = await centra(baseURL).path(`/guild/members/${identifier}`).query({
             'api': this.key
