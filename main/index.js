@@ -86,11 +86,11 @@ class Client {
 
     /**
 	* Get info about a guild.
-	* @param {string} indentifier - The tag of the guild
+	* @param {string} identifier - The tag of the guild
 	*/
-    async getGuildInfo(indentifier) {
+    async getGuildInfo(identifier) {
 
-        const res = await centra(baseURL).path(`/guild/info/${indentifier}`).query({
+        const res = await centra(baseURL).path(`/guild/info/${identifier}`).query({
             'api': this.key
         }).send()
 
@@ -108,9 +108,9 @@ class Client {
     * @param {string} [targetType=tag] - Target type. 'tag' or 'id'
 	* @param {string} identifier - Identifier for the target. (Either a tag or id, based on targetType.)
 	*/
-    async getGuildMembers(indentifier) {
-        identifier = targetType !== 'id' ? indentifier : '-' + indentifier
-        const res = await centra(baseURL).path(`/guild/members/${indentifier}`).query({
+    async getGuildMembers(identifier) {
+        identifier = targetType !== 'id' ? identifier : '-' + identifier
+        const res = await centra(baseURL).path(`/guild/members/${identifier}`).query({
             'api': this.key
         }).send()
 
